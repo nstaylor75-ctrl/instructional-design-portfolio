@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assessment Experience</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    .demo-shell {
+      max-width: 980px;
+      margin: 80px auto;
+      padding: 28px;
+    }
+
+    .demo-panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.9);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .demo-header {
+      padding: 34px;
+      background: linear-gradient(135deg, #2b6cb0, #805ad5);
+      color: white;
+    }
+
+    .demo-header h1 {
+      font-size: clamp(36px, 6vw, 70px);
+    }
+
+    .demo-content {
+      padding: 34px;
+    }
+
+    .demo-content p {
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .interaction-preview {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .mini-card {
+      min-height: 130px;
+      padding: 18px;
+      border-radius: 20px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform .2s ease;
+    }
+
+    .mini-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .mini-card strong {
+      font-size: 18px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 26px;
+      font-weight: 900;
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    @media (max-width: 720px) {
+      .interaction-preview {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="demo-shell fade-up">
+    <section class="demo-panel">
+      <div class="demo-header">
+        <p class="eyebrow" style="color:white;">Portfolio Demo</p>
+        <h1>Assessment Experience</h1>
+      </div>
+      <div class="demo-content">
+        <p>A modern assessment introduction and results concept designed to make knowledge checks feel purposeful, clear, and action-oriented.</p>
+        <p><strong>Replace this page with the full HTML interaction when ready.</strong> This placeholder is already wired correctly for GitHub Pages.</p>
+
+        <div class="interaction-preview">
+          <div class="mini-card"><strong>Intro Screen</strong><span>Interaction pattern</span></div>
+          <div class="mini-card"><strong>Results UX</strong><span>Learning strategy</span></div>
+          <div class="mini-card"><strong>Motivation</strong><span>Design feature</span></div>
+        </div>
+
+        <a class="back-link" href="../../index.html">← Back to portfolio</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
