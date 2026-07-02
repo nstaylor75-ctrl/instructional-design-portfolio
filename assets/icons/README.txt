@@ -1,0 +1,1 @@
+Add SVG icons or other portfolio-safe visual assets here.

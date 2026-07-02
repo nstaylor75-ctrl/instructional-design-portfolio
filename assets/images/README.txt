@@ -1,0 +1,1 @@
+Add portfolio screenshots or safe placeholder images here.
